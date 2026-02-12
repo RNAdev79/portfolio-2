@@ -596,6 +596,64 @@ section {
 /* ========================================
    Responsive Design
    ======================================== */
+/* ========================================
+   Responsive Design
+   ======================================== */
+
+/* Mobile Color Optimization (below 600px) */
+@media (max-width: 600px) {
+  :root {
+    /* Mobile-Optimized Color Palette */
+    /* Original colors adjusted for mobile screens:
+       - Reduced saturation by 8-12%
+       - Reduced lightness by 3-6%
+       - Maintains hue for brand consistency */
+    
+    /* Background Colors */
+    --color-bg-dark: hsl(240, 20%, 5%);           /* Desktop: #0a0a0f */
+    --color-bg-darker: hsl(240, 23%, 3%);         /* Desktop: #050508 */
+    --color-purple-dark: hsl(260, 55%, 9%);       /* Desktop: #1a0b2e */
+    
+    /* Primary Brand Colors */
+    --color-purple: hsl(260, 88%, 55%);           /* Desktop: #6b2aff (100% sat, 58% light) */
+    --color-purple-light: hsl(258, 80%, 58%);     /* Desktop: #8b5cf6 (90% sat, 64% light) */
+    --color-pink: hsl(330, 75%, 56%);             /* Desktop: #ec4899 (81% sat, 60% light) */
+    --color-violet: hsl(283, 82%, 60%);           /* Desktop: #a855f7 (89% sat, 64% light) */
+    
+    /* Text Colors */
+    --color-text-primary: hsl(0, 0%, 96%);        /* Desktop: #ffffff */
+    --color-text-secondary: hsl(240, 15%, 70%);   /* Desktop: #b8b8d1 (23% sat, 76% light) */
+    --color-text-muted: hsl(240, 13%, 45%);       /* Desktop: #6b6b8a (18% sat, 48% light) */
+    
+    /* Gradients - Using adjusted colors */
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(260, 88%, 55%) 0%,
+      hsl(330, 75%, 56%) 100%
+    );
+    --gradient-bg: linear-gradient(
+      180deg,
+      hsl(240, 23%, 3%) 0%,
+      hsl(260, 55%, 9%) 100%
+    );
+    --gradient-card: linear-gradient(
+      135deg,
+      hsla(260, 88%, 55%, 0.08) 0%,
+      hsla(330, 75%, 56%, 0.04) 100%
+    );
+    
+    /* Shadows - Slightly reduced opacity for mobile */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+    --shadow-md: 0 4px 16px rgba(107, 42, 255, 0.15);
+    --shadow-lg: 0 8px 32px rgba(107, 42, 255, 0.22);
+    --shadow-glow: 0 0 30px rgba(107, 42, 255, 0.3);
+  }
+}
+
+
+
+
+
 
 /* Tablet */
 @media (max-width: 1024px) {
@@ -698,3 +756,4 @@ section {
     font-size: var(--font-size-base);
   }
 }
+
