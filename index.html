@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang="title">RNA - Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Letters -->
+    <div class="bg-letter bg-letter-r">R</div>
+    <div class="bg-letter bg-letter-n">N</div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">RNA</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active" data-lang="nav-home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-lang="nav-about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-lang="nav-skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-lang="nav-projects">Projects</a></li>
+                <li><a href="#contact" class="nav-link" data-lang="nav-contact">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="lang-switch" id="langSwitch">
+                    <span class="lang-option active" data-lang-btn="en">EN</span>
+                    <span class="lang-divider">|</span>
+                    <span class="lang-option" data-lang-btn="ar">AR</span>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-greeting" data-lang="hero-greeting">Hello, It's</h1>
+            <h1 class="hero-name gradient-text">Rahaf</h1>
+            <p class="hero-subtitle">I'm a <span id="typewriter-word" class="gradient-text"></span></p>
+            <a href="#projects" class="cta-button" data-lang="cta-button">Let's Start</a>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title gradient-text" data-lang="about-title">About Me</h2>
+            <div class="title-underline"></div>
+            <p class="about-text" data-lang="about-text">
+                I'm a passionate frontend developer with a keen eye for design and user experience. 
+                I specialize in creating modern, responsive websites that not only look stunning but 
+                also provide seamless user interactions. With expertise in HTML, CSS, JavaScript, and 
+                modern frameworks, I bring creative ideas to life through clean, efficient code.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title gradient-text" data-lang="skills-title">Skills</h2>
+            <div class="title-underline"></div>
+            <div class="skills-grid">
+                <!-- Skill Card 1 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3 class="skill-name" data-lang="skill-java-name">Java</h3>
+                    <p class="skill-desc" data-lang="skill-java-desc">Object-oriented programming and backend development</p>
+                </div>
+
+                <!-- Skill Card 2 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3 class="skill-name" data-lang="skill-js-name">JavaScript</h3>
+                    <p class="skill-desc" data-lang="skill-js-desc">Dynamic web applications and interactive experiences</p>
+                </div>
+
+                <!-- Skill Card 3 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3 class="skill-name" data-lang="skill-html-name">HTML & CSS</h3>
+                    <p class="skill-desc" data-lang="skill-html-desc">Semantic markup and modern responsive design</p>
+                </div>
+
+                <!-- Skill Card 4 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3 class="skill-name" data-lang="skill-react-name">React</h3>
+                    <p class="skill-desc" data-lang="skill-react-desc">Component-based UI development and state management</p>
+                </div>
+
+                <!-- Skill Card 5 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="skill-name" data-lang="skill-db-name">Database</h3>
+                    <p class="skill-desc" data-lang="skill-db-desc">SQL and NoSQL database design and optimization</p>
+                </div>
+
+                <!-- Skill Card 6 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="skill-name" data-lang="skill-design-name">UI/UX Design</h3>
+                    <p class="skill-desc" data-lang="skill-design-desc">User-centered design and visual aesthetics</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title gradient-text" data-lang="projects-title">Projects</h2>
+            <div class="title-underline"></div>
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <h3 class="project-title" data-lang="project1-title">Power BI Dashboard</h3>
+                    <p class="project-desc" data-lang="project1-desc">
+                        Interactive data visualization dashboard with real-time analytics and custom reports 
+                        for business intelligence insights.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Power BI</span>
+                        <span class="tag">Data Analysis</span>
+                        <span class="tag">Visualization</span>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <h3 class="project-title" data-lang="project2-title">Ticket Booking App</h3>
+                    <p class="project-desc" data-lang="project2-desc">
+                        Full-stack booking application with user authentication, seat selection, 
+                        and payment integration for seamless ticket purchasing.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <h3 class="project-title" data-lang="project3-title">Interactive Web Projects</h3>
+                    <p class="project-desc" data-lang="project3-desc">
+                        Collection of creative web applications featuring animations, games, 
+                        and interactive UI components with modern design patterns.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Animation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title gradient-text" data-lang="contact-title">Get In Touch</h2>
+            <div class="title-underline"></div>
+            <p class="contact-text" data-lang="contact-text">
+                Let's work together! Feel free to reach out for collaborations or just a friendly chat.
+            </p>
+            <p class="contact-email">RNADev@outlook.com</p>
+            <div class="contact-buttons">
+                <a href="mailto:RNADev@outlook.com" class="contact-btn" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://github.com/RNAdev79" target="_blank" class="contact-btn" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/rahaf-467240380/" target="_blank" class="contact-btn" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p data-lang="footer-text">&copy; 2026 RNA. All rights reserved.</p>
+        <p class="footer-subtext">صُمم وطُور بشغف</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
